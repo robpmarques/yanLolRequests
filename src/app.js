@@ -1,7 +1,6 @@
-import dotenv from 'dotenv/config';
-import cors from 'cors';
-import express from 'express';
-import routes from './routes';
+const cors = require('cors');
+const express = require('express');
+const routes = require('./routes');
 
 class App {
   constructor() {

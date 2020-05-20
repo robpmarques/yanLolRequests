@@ -1,5 +1,5 @@
-import { Router } from 'express';
-import axios from 'axios';
+const { Router } = require('express');
+const axios = require('axios');
 
 const routes = new Router();
 
