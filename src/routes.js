@@ -30,4 +30,4 @@ routes.get('/match/:matchId', async (req, res) => {
   res.json({ match: match.data });
 });
 
-export default routes;
+module.exports = routes;
