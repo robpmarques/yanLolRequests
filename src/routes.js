@@ -19,6 +19,12 @@ routes.get('/matchlist/:userId', async (req, res) => {
 
 });
 
+routes.get('/yanId/', async (req, res) => {
+  let yanId = await axios.get('https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/Kur%C3%B6o', config);
+
+  return res.json({ accountId: yanId.data.accountId });
+});
+
 routes.get('/match/:matchId', async (req, res) => {
 
   let matchId = req.params.matchId;
